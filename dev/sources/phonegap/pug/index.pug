@@ -1,0 +1,12 @@
+extends layout/layout
+block content
+    .views
+        .view.view-main
+            .pages.navbar-fixed
+    .hidden
+        #success_modal: .modal-content
+            .modal-content-success
+                .modal-content-label Succesvolle Transactie
+                .modal-content-desc Het bedrag is succesvol afgeschreven!
+                .modal-content-icon: img(src="./assets/img/icon-modal-success.png")
+                a(href="./pages/index.html", modal-dismiss).button.button-big.button-fill.button-raised.color-blue Akkoord

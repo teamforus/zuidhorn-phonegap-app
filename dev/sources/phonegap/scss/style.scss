@@ -1,0 +1,64 @@
+@import 'includes/vars';
+@import 'includes/helpers';
+
+body {
+    .text-center {
+        text-align: center;
+    }
+
+    .text-danger {
+        color: #b0002d;
+    }
+
+    .block-voucher-code {
+        .voucher-code-label {
+            display: block;
+            text-align: center;
+            margin-bottom: 20px;
+            font: 400 15px/22px $bf;
+
+            em.mdi {
+                color: #69ac69;
+                font-size: 22px;
+                display: inline-block;
+                vertical-align: middle;
+                margin-right: 5px;
+            }
+        }
+
+        .voucher-value-container {
+            margin: 0 30px 50px;
+            text-align: center;
+            padding: 20px;
+            background-color: #fff;
+            border: 1.5px dashed #2d79c7;
+            border-radius: 10px;
+
+            .voucher-value {
+                font: 400 38px/100px $bf;
+            }
+        }
+    }
+
+    .modal-content {
+        background-color: #fff;
+    
+        .modal-content-success {
+            text-align: center;
+
+            .modal-content-label {
+                color: #084e93;
+                font: 600 17px/26px $bf; 
+            }
+
+            .modal-content-desc {
+                font: 400 13.5px/22px $bf;
+                margin-bottom: 30px;
+            }
+
+            .modal-content-icon {
+                margin-bottom: 30px;
+            }
+        }
+    }
+}

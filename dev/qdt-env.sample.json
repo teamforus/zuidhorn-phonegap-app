@@ -1,0 +1,10 @@
+{
+    "server": {
+        "enabled": true,
+        "platform": "phonegap-html",
+        "watch_platforms": "all"
+    },
+    "platforms": {
+        "enabled": ["phonegap", "phonegap-html"]
+    }
+}

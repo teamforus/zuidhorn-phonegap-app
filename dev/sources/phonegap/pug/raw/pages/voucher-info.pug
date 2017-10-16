@@ -1,0 +1,39 @@
+.page(data-page="voucher-info")
+    .navbar
+        .navbar-inner
+            .left
+                a(href="./index.html").back.link.icon-only
+                    i.icon.icon-back
+            .center Succesvolle scan
+            .right
+                a(href="./pages/info.html").link.icon-only
+                    i.f7-icons info
+    .page-content
+        .content-block
+            .block-voucher-code
+                .voucher-code-label
+                    em.mdi.mdi-check-circle
+                    | Huidige waarde van de voucher
+                .voucher-value-container
+                    .voucher-value €{{toFixed voucher.max_amount}}
+                    i.f7-icons info
+        .content-block(style='margin: 0 0 -20px;')
+            p(style='margin: 0; color: #777;')
+                | Vul het bedrag in dat wordt besteed. 
+                br
+                | Maximaal 
+                strong €{{toFixed voucher.max_amount}}
+                | .
+        div(voucher-form='')
+            form#my-form.list-block
+                ul
+                    li#founds-value
+                        .item-content
+                            .item-inner
+                                .item-title.label Bedrag dat wordt besteed 
+                                .item-input
+                                    input(type='number' min="0.1"  name='amount' placeholder='Bedrag…')
+
+            .content-block
+                p(validation-errors) 
+                a(href="#" submit-btn='').button.button-big.button-fill.button-raised.color-deeppink Bevestig   
